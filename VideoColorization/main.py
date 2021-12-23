@@ -30,7 +30,7 @@ img_bw = postprocess_tens(tens_l_orig, torch.cat(
 out_img_siggraph17 = postprocess_tens(
     tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
 
-plt.imsave('%s%s_siggraph.png' % (opt.save_prefix,path[16:-4]), out_img_siggraph17)
+plt.imsave('%s%s_siggraph.png' % (opt.save_prefix,path[23:-4]), out_img_siggraph17)
 
 plt.figure(figsize=(12, 8))
 plt.subplot(2, 2, 1)
